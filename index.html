@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的旅行足迹 · Travel Journey</title>
+    <meta name="description" content="我的旅行足迹——用脚步丈量世界，用镜头记录感动。记录每一段旅程、旅行心得与照片回忆。">
+    <meta name="theme-color" content="#6c5ce7">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+
+    <!-- 欢迎页 -->
+    <div class="welcome" id="welcome">
+        <div class="welcome-inner">
+            <div class="welcome-logo">Travel<span>Journey</span></div>
+            <h1 class="welcome-title">我的旅行足迹</h1>
+            <div class="welcome-divider"></div>
+            <p class="welcome-subtitle">Travel · Explore · Remember</p>
+            <p class="welcome-tagline">用脚步丈量世界，用镜头记录感动</p>
+            <button class="welcome-btn" id="welcomeBtn">开启旅程 →</button>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav id="navbar">
+        <div class="logo">Travel<span>Journey</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">首页</a></li>
+            <li><a href="#timeline">足迹</a></li>
+            <li><a href="#notes">心得</a></li>
+            <li><a href="#destinations">目的地</a></li>
+            <li><a href="#wishlist">愿望</a></li>
+            <li><a href="#about">关于</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="打开导航菜单" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>我的旅行足迹</h1>
+            <div class="divider"></div>
+            <p class="subtitle">Travel · Explore · Remember</p>
+            <p class="tagline">用脚步丈量世界，用镜头记录感动</p>
+        </div>
+        <a href="#stats" class="scroll-indicator">向下滚动 ↓</a>
+    </section>
+
+    <!-- 统计数据 -->
+    <section class="stats" id="stats">
+        <div class="stat-item reveal">
+            <span class="number" data-target="3">0</span>
+            <span class="label">城市 Cities</span>
+        </div>
+        <div class="stat-item reveal">
+            <span class="number" data-target="40">0</span>
+            <span class="label">照片 Photos</span>
+        </div>
+    </section>
+
+    <!-- 旅行足迹 - 时间线 -->
+    <div class="section-title reveal">
+        <h2>旅行<span>足迹</span></h2>
+        <p>每一段旅程，都是一次成长</p>
+        <div class="line"></div>
+    </div>
+
+    <section class="timeline-section" id="timeline">
+        <div class="timeline">
+            <!-- 旅程1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2021.06</span>
+                    <h3>高考在即</h3>
+                    <p class="location">📍 母校兴高</p>
+                    <p>高中三年转瞬即逝，很幸运认识那么多同学，也留下了许多美好的回忆，唯一遗憾的就是高中没有多在镜头前留下多一点照片</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/25.jpg" alt="高考中的班里" loading="lazy">
+                        <img class="timeline-photo" src="image/24.jpg" alt="毕业后的暑假在石南街喝奶茶" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2021.09</span>
+                    <h3>暑假及大学</h3>
+                    <p class="location">📍 崇左</p>
+                    <p>毕业后的暑假在石南打暑假工，离职后跟暑假工认识的好朋友一起去看了第一部电影叫做明日之战，第一次看电影很震撼</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/31.jpg" alt="明日之战" loading="lazy">
+                        <img class="timeline-photo" src="image/26.jpg" alt="电影开场手拿爆米花" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程3（占位：把日期、标题、地点、故事和图片换成你的真实旅程即可） -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2021.10</span>
+                    <h3>进入大学生活</h3>
+                    <p class="location">📍 崇左大学校园</p>
+                    <p>我的人生开启了新的篇章，也是在这里遇到了我的新同学和好室友，四年也是稍纵即逝，蓦然回首仿佛昨天才踏入校园</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/2.jpg" alt="宿舍后面的施工地" loading="lazy">
+                        <img class="timeline-photo" src="image/27.jpg" alt="那晚的夜空" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程4（占位） -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2021.10</span>
+                    <h3>太平古城之旅</h3>
+                    <p class="location">📍 崇左</p>
+                    <p>跟大学的好兄弟水鱼第一次出去玩，太平古城算是崇左一个比较大的游玩的地方了，老式的建筑，也是在这里留下了很多美好的照片</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/1.jpg" alt="太平古城内的大桥" loading="lazy">
+                        <img class="timeline-photo" src="image/32.jpg" alt="太平古城的城门" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程5 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2023.10</span>
+                    <h3>国庆北海之行</h3>
+                    <p class="location">📍 北海</p>
+                    <p>国庆来临，我跟水鱼两人出发北海去玩，也是第一次看到了海，去了北海的银滩，海神广场，侨港风情街等，吃了大鱿鱼串，吃了虾饼，吃了海鲜粉，吃了捞汁小海鲜</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/3.jpg" alt="紫霞湾的傍晚" loading="lazy">
+                        <img class="timeline-photo" src="image/4.jpg" alt="紫霞湾的傍晚手捏落日" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程6 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2025.04</span>
+                    <h3>横州巡检</h3>
+                    <p class="location">📍 横州</p>
+                    <p>南宁实习，工作出差去横州巡检设备，路过记录了一下，吃了一晚鸡腿粉作为午餐，确实味道很不错，蜜汁鸡腿</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/8.jpg" alt="横州的一条大河" loading="lazy">
+                        <img class="timeline-photo" src="image/28.jpg" alt="横州吃了一晚鸡腿粉" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程7 -->
+				<div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2025.04</span>
+                    <h3>五象湖公园</h3>
+                    <p class="location">📍 南宁</p>
+                    <p>在南宁的一次休假的时候跟我实习的同事兼师兄一起去南宁的五象湖公园玩，可能是因为夜班上多了，整个人其实精神比较差，不过我还是觉得很不错的</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/7.jpg" alt="一个很高的塔" loading="lazy">
+                        <img class="timeline-photo" src="image/33.jpg" alt="五象湖公园的一角" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <!-- 旅程8 -->
+		 <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2025.06</span>
+                    <h3>毕业之际回家</h3>
+                    <p class="location">📍 玉林</p>
+                    <p>毕业之前回去准备答辩，以及收拾行囊准备下广找工作了，迈出社会体会柴米油盐的来之不易了</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/5.jpg" alt="外婆种的百香果的花" loading="lazy">
+                        <img class="timeline-photo" src="image/9.jpg" alt="老房子已经被拆了" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <!-- 旅程9 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2025.07</span>
+                    <h3>初至深圳</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>毕业后，兴高采烈地跑到深圳来，投了很多简历并没有跟想的一样会很快找到工作，有段时间很迷茫，也知道自己的很多不足，但日常还是不能亏待自己</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/35.jpg" alt="给自己点的瑞辛" loading="lazy">
+                        <img class="timeline-photo" src="image/36.jpg" alt="早餐吃的蒸米线" loading="lazy">
+                    </div>
+                </div>
+            </div> 
+            <!-- 旅程10 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2025.8</span>
+                    <h3>找到新工作</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>找到了新工作，慢慢得适应了，也开始有了一些自己的规划，开始不断去学习专业相关的知识</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/37.jpg" alt="路上的粉色花" loading="lazy">
+                        <img class="timeline-photo" src="image/38.jpg" alt="附近的一角" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程11 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.02</span>
+                    <h3>宝安壹方城</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>休假自己刷抖音看到有高达实体店在宝安，然后自己前往宝安壹方城去玩，有巨人展的大雕像还有超大的高达像</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/39.jpg" alt="巨人展的大巨人" loading="lazy">
+                        <img class="timeline-photo" src="image/10.jpg" alt="超大的高达" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程12 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.02</span>
+                    <h3>宝安壹方城</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>在壹方城里面，因为是临近春节，所以里面的寶可夢道馆有新春元素的对联啊，红包等等，午餐在里面的老乡鸡吃了一个15的套餐</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/29.jpg" alt="宝可梦道馆" loading="lazy">
+                        <img class="timeline-photo" src="image/30.jpg" alt="老乡鸡套餐" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程13 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.02</span>
+                    <h3>宝安壹方城</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>在高达的实体店里面看到了喜欢的粉色扎古高达，本来想做小活动获得礼品的，但是好像活动结束了，然后店里给了高达贴纸，宝可梦道馆给了一张宝可梦主题的明星片</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/40.jpg" alt="高达贴纸" loading="lazy">
+                        <img class="timeline-photo" src="image/41.jpg" alt="宝可梦明信片" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程14 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.03</span>
+                    <h3>宿舍里</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>堂哥生日过来找我，我们一起过生日，先去吃了烤肉然后回宿舍后我们又搞了蛋糕，希望时间慢一点，愿我们永远少年</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/12.jpg" alt="大水果蛋糕" loading="lazy">
+                        <img class="timeline-photo" src="image/42.jpg" alt="切好后的蛋糕" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程15 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.06</span>
+                    <h3>梧桐山</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>第一次爬梧桐山，没有做任何规划，还挑了个太阳最大的下午爬，爬的是凌云道，直接浑身大汗淋漓，不过上到小梧桐已经是接近6点了，看着天色将晚，只能直接下山了</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/43.jpg" alt="梧桐山大门口" loading="lazy">
+                        <img class="timeline-photo" src="image/44.jpg" alt="凌云道的阶梯" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程16 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.07</span>
+                    <h3>华强北</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>跟的卢去华强北看相机以及手机，普遍价格偏高，不过至少质量应该是有保障的，逛完之后晚餐搞了一个双人的金拱门套餐</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/45.jpg" alt="档口的iphone" loading="lazy">
+                        <img class="timeline-photo" src="image/46.jpg" alt="M记的套餐" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程17 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.09</span>
+                    <h3>广州之旅</h3>
+                    <p class="location">📍 广州</p>
+                    <p>休息去广州找水鱼，跟水鱼去了永乐坊，去了广州塔，晚上吃了螺蛳粉，拍了很多照片，第二天准备走时去唱了很多歌</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/13.jpg" alt="广州中心" loading="lazy">
+                        <img class="timeline-photo" src="image/14.jpg" alt="广州塔" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程18 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.09</span>
+                    <h3>广州之旅</h3>
+                    <p class="location">📍 广州</p>
+                    <p>跟水鱼睡到第二天，水鱼说带我吃漂亮饭，我们去吃了佬麻雀，很实惠，菜的味道也很不错，太赞了</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/15.jpg" alt="广州塔&小马" loading="lazy">
+                        <img class="timeline-photo" src="image/47.jpg" alt="漂亮饭" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程19 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.09</span>
+                    <h3>大梅沙</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>跟的卢出来玩，去了大梅沙，人挺多的，我们沿着沙滩走，然后拍了很多照片，还有一个大哥也跟我们一起拍照，海边的风让人心旷神怡</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/49.jpg" alt="沙滩" loading="lazy">
+                        <img class="timeline-photo" src="image/48.jpg" alt="晚上的蜜雪" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 旅程20 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2026.10</span>
+                    <h3>再战梧桐山</h3>
+                    <p class="location">📍 深圳</p>
+                    <p>跟陈一起先去梧桐山的小镇住了一晚，陈钱包大出血，然后第二天出发梧桐山，北门进发，上到了鹏城第一峰，途中大暴雨，后面雨过天晴，我们又从大梧桐到小梧桐，再从小梧桐的凌云道下去，虽然很累，但是很充实</p>
+                    <div class="timeline-photos">
+                        <img class="timeline-photo" src="image/19.jpg" alt="梧桐山山顶" loading="lazy">
+                        <img class="timeline-photo" src="image/22.jpg" alt="下来后的门以及🌈" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 旅行心得 -->
+    <div class="section-title reveal" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
+        <h2 style="color: #fff;">旅行<span>心得</span></h2>
+        <p style="color: rgba(255,255,255,0.8);">在路上，遇见更好的自己</p>
+        <div class="line" style="background: #fff;"></div>
+    </div>
+
+    <section class="notes-section" id="notes" style="padding-top: 0; background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 50%, #fd79a8 100%);">
+        <div class="notes-grid">
+            <div class="note-card">
+                <div class="quote-mark">"</div>
+                <h3>关于出发</h3>
+                <p>最难的不是抵达，而是迈出第一步。当你真正站在路上，所有的不安都会变成风景。</p>
+                <div class="note-date">— 旅途随笔</div>
+            </div>
+            <div class="note-card">
+                <div class="quote-mark">"</div>
+                <h3>关于遇见</h3>
+                <p>每一段旅程中遇见的人，都是生命中的一道光。他们的故事，丰富了我的世界。</p>
+                <div class="note-date">— 旅途随笔</div>
+            </div>
+            <div class="note-card">
+                <div class="quote-mark">"</div>
+                <h3>关于归途</h3>
+                <p>回家不是旅程的结束，而是另一种开始。那些看过的风景，会永远留在心里。</p>
+                <div class="note-date">— 旅途随笔</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 目的地城市墙 -->
+    <section class="dest-section" id="destinations">
+        <div class="section-title reveal">
+            <h2>目的地<span>城市墙</span></h2>
+            <p>那些留下过脚印的地方</p>
+            <div class="line"></div>
+        </div>
+        <div class="city-grid">
+            <div class="city-card reveal">
+                <div class="city-thumb">
+                    <img src="image/19.jpg" alt="深圳梧桐山" loading="lazy">
+                </div>
+                <div class="city-info">
+                    <h3>深圳</h3>
+                    <p class="city-region">📍 广东 · 2026.10</p>
+                    <p class="city-note">梧桐山登顶，晴朗又汗流浃背的一天</p>
+                </div>
+            </div>
+            <div class="city-card reveal">
+                <div class="city-thumb">
+                    <img src="image/14.jpg" alt="广州塔" loading="lazy">
+                </div>
+                <div class="city-info">
+                    <h3>广州</h3>
+                    <p class="city-region">📍 广东 · 2026.09</p>
+                    <p class="city-note">小蛮腰、李小龙故居与一碗螺蛳粉</p>
+                </div>
+            </div>
+            <div class="city-card reveal">
+                <div class="city-thumb">
+                    <img src="image/5.jpg" alt="外婆家的村庄" loading="lazy">
+                </div>
+                <div class="city-info">
+                    <h3>玉林</h3>
+                    <p class="city-region">📍 广西 · 2025.06</p>
+                    <p class="city-note">毕业之际，熟悉又陌生的花花草草</p>
+                </div>
+            </div>
+            <!-- 占位卡片：复制上面任意一张卡片，改成新城市即可 -->
+            <div class="city-card add reveal">
+                <div class="city-add-inner">
+                    <span class="city-add-icon">＋</span>
+                    <h3>下一座城市</h3>
+                    <p class="city-note">待补充（编辑 HTML 添加新卡片）</p>
+                </div>
+            </div>
+            <div class="city-card add reveal">
+                <div class="city-add-inner">
+                    <span class="city-add-icon">＋</span>
+                    <h3>下一座城市</h3>
+                    <p class="city-note">待补充（编辑 HTML 添加新卡片）</p>
+                </div>
+            </div>
+            <div class="city-card add reveal">
+                <div class="city-add-inner">
+                    <span class="city-add-icon">＋</span>
+                    <h3>下一座城市</h3>
+                    <p class="city-note">待补充（编辑 HTML 添加新卡片）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 旅行愿望清单 -->
+    <section class="wish-section" id="wishlist">
+        <div class="section-title reveal">
+            <h2>旅行<span>愿望清单</span></h2>
+            <p>下一站，去哪里好呢？点击心愿可以标记完成</p>
+            <div class="line"></div>
+        </div>
+        <div class="wish-progress reveal">
+            <div class="wish-progress-bar"><span id="wishFill"></span></div>
+            <p id="wishCount">已点亮 0 / 9 个心愿</p>
+        </div>
+        <ul class="wish-list" id="wishList">
+            <li class="wish-item" data-name="稻城亚丁">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>稻城亚丁</h3>
+                    <p>四川 · 看秋天的彩林与三座神山</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="赛里木湖">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>赛里木湖</h3>
+                    <p>新疆 · 大西洋最后一滴眼泪</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="拉萨">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>拉萨</h3>
+                    <p>西藏 · 离天空最近的地方</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="漓江">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>漓江</h3>
+                    <p>广西 · 乘竹筏漂进山水画里</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="故宫长城">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>故宫 + 长城</h3>
+                    <p>北京 · 红墙黄瓦与长城日出</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="敦煌">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>敦煌</h3>
+                    <p>甘肃 · 莫高窟与鸣沙山的夕阳</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="西安">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>西安</h3>
+                    <p>陕西 · 兵马俑与古城墙骑行</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="青海湖">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>青海湖</h3>
+                    <p>青海 · 七月湖畔的油菜花海</p>
+                </div>
+            </li>
+            <li class="wish-item" data-name="杭州西湖">
+                <span class="wish-check" aria-hidden="true">✓</span>
+                <div class="wish-text">
+                    <h3>杭州西湖</h3>
+                    <p>浙江 · 断桥残雪，烟雨江南</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about-section" id="about">
+        <div class="section-title reveal">
+            <h2>关于<span>我</span></h2>
+            <p>很高兴在这里与你相遇</p>
+            <div class="line"></div>
+        </div>
+        <div class="about-card reveal">
+            <div class="about-left">
+                <div class="about-avatar">✈️</div>
+                <h3>一个喜欢记录生活的小男孩</h3>
+                <ul class="about-meta">
+                    <li>📍 坐标：中国</li>
+                    <li>🎒 方式：自由行，偶尔说走就走</li>
+                    <li>📷 记录：手机 + 双眼👀</li>
+                    <li>✏️ 始于：2021 年</li>
+                </ul>
+            </div>
+            <div class="about-right">
+                <p>你好，我是一名普通的旅行者。喜欢在假期背着包出门，看没看过的风景，吃没吃过的东西，认识形形色色的人。</p>
+                <p>回到日常以后，这些照片和文字就成了最珍贵的纪念品。这个小站，用来安放旅途中的每一次感动——我们终将离开这个世界，我们唯一能够做的就是感受这个世界</p>
+                <div class="about-links">
+                    <a href="#hero">⬆ 回到顶部</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-logo">Travel<span>Journey</span></div>
+        <div class="footer-divider"></div>
+        <p>用脚步丈量世界，用心感受旅途</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.4;">© <span id="year">2025</span> My Travel Journey · 个人旅行记录</p>
+    </footer>
+
+    <!-- 图片灯箱 -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="图片预览">
+        <button class="lightbox-close" id="lightboxClose" aria-label="关闭预览">&times;</button>
+        <img class="lightbox-img" id="lightboxImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="旅行照片大图">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <!-- 回到顶部 -->
+    <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+    <script src="travel.js"></script>
+</body>
+</html>
